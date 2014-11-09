@@ -94,6 +94,19 @@
       <div class="fb-comments" data-href="http://danielkrizian.github.io{{ page.url }}" data-num-posts="{{ page.fb_comments }}" data-width="550" data-font="arial"></div>
     </div-->
     {% endif %}
+
+    <div id="discourse-comments"></div>
+
+    <script type="text/javascript">
+      var discourseUrl = "http://quantonomy.capital/",
+          discourseEmbedUrl = 'http://danielkrizian.github.io{{ page.url }}';
+
+      (function() {
+        var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+          d.src = discourseUrl + 'javascripts/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+      })();
+    </script>
     
     {% if paginator.page %}
     <div id="paginator" class="content">

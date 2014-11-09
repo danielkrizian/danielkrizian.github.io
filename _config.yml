@@ -6,5 +6,6 @@ markdown: rdiscount
 # enables SmartyPants (nice curly quotation marks, em/en dashes, elipses, etc):
 rdiscount:
   extensions: [smart]
+# discourse_url: "http://quantonomy.capital/" # not used right now. See _layouts/default.html
 # Since GH pages override this to "true", we test this value to see if we are running locally
 safe: true
